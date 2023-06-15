@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="visually-hidden">Steganography</h1>
+        <div class="block">
+          <h2 class="title">ENCRYPT</h2>
+          <p class="label">Secret message</p>
+          <textarea id="text" rows="5" class="input"></textarea>
+          <p class="label">Password (Up to 16 characters)</p>
+          <input id="password" type="text" maxlength="16" class="input" />
+          <p class="label">Open message (Min. two words)</p>
+          <textarea id="open-message" rows="5" class="input"></textarea>
+          <button type="button" onclick="start(0)" class="button">Hide</button>
+          <p class="label">Hidden message</p>
+          <p id="output" class="output"></p>
+        </div>
+        <div class="block">
+          <h2 class="title">DECRYPT</h2>
+          <p class="label">Hidden message</p>
+          <textarea id="textD" rows="5" class="input"></textarea>
+          <p class="label">Password (Up to 16 characters)</p>
+          <input id="passwordD" type="text" maxlength="16" class="input" />
+          <button type="button" onclick="start(1)" class="button">
+            Reveal
+          </button>
+          <p id="outputD" class="output"></p>
+        </div>
+        <script src="./script.js"></script>
+      </div>
+    </main>
+  </body>
+</html>

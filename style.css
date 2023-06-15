@@ -1,0 +1,85 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  background-color: #f8f8ff;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.block {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  /* background-color: #eeeef5; */
+  background-color: #ebebf1;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.title {
+  /* margin-top: 0;
+  margin-bottom: 0; */
+  margin: 0;
+  cursor: default;
+}
+
+.input {
+  display: block;
+  resize: none;
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding: 5px;
+  background-color: #f8f8ff;
+  border: 1px solid rgba(128, 128, 128, 0.508);
+  border-radius: 3px;
+}
+
+.label {
+  margin: 10px 0;
+  cursor: default;
+}
+
+.output {
+  display: block;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 5px;
+  /* background-color: white; */
+  /* border: 1px solid; */
+  min-height: 34px;
+  background-color: #f8f8ff;
+  border-radius: 3px;
+}
+
+.button {
+  font-size: 25px;
+  display: block;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: rgb(49, 47, 47);
+  border: 1px solid rgba(128, 128, 128, 0.508);
+  border-radius: 3px;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #cdcdd3;
+  border-color: transparent;
+}
